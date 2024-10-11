@@ -52,7 +52,7 @@ const Register = () => {
             formdata.append("userimg", filesdata)
         }
 
-        const response = await axios.post("http://localhost:4006/user/api/register", formdata, config).then((res) => res).catch((error) => error);
+        const response = await axios.post("https://social-media-task.onrender.com/user/api/register", formdata, config).then((res) => res).catch((error) => error);
         console.log("response", response)
 
         if (response.status == 200) {

@@ -9,7 +9,7 @@ const Home = () => {
     const [socialhandle, setsocialhandle] = useState("")
 
     const handlegetUserdata = async () => {
-        const response = await axios.get("http://localhost:4006/user/api/getUser").then((res) => res).catch((error) => error);
+        const response = await axios.get("https://social-media-task.onrender.com/user/api/getUser").then((res) => res).catch((error) => error);
      
 
         if (response.status == 200) {
@@ -40,7 +40,7 @@ const Home = () => {
                                                 element.userprofile.length > 0 && element.userprofile.map((ele) => {
                                                     return (
                                                         <>
-                                                           <Link to="/uploads"> <Card.Img style={{ width: "50px", height: "50px", borderRadius: "50%", marginTop: "3px" }} src={`http://localhost:4006/uploads/${ele}`} /></Link>
+                                                           <Link to="/uploads"> <Card.Img style={{ width: "50px", height: "50px", borderRadius: "50%", marginTop: "3px" }} src={`https://social-media-task.onrender.com/uploads/${ele}`} /></Link>
                                                         </>
                                                     )
                                                 })
