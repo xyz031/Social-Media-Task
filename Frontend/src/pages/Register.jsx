@@ -66,16 +66,16 @@ const Register = () => {
     return (
         <>
             <Container style={{ marginTop: "10px" }}>
-                <h1 className='text-center'>Upload Multiple Image</h1>
+                <h1 className='text-center'>Record a memory</h1>
                 <div className='d-flex flex-direct-column justify-content-center'>
                     <Form className='w-50'>
                         <Form.Group className="mb-3" >
-                            <Form.Label>User Name</Form.Label>
-                            <Form.Control type="text" value={username} onChange={handleChange} placeholder="username" />
+                            <Form.Label>Title</Form.Label>
+                            <Form.Control type="text" value={username} onChange={handleChange} placeholder="Title" />
                         </Form.Group>
                         <Form.Group className="mb-3" >
-                            <Form.Label>Socialhandle</Form.Label>
-                            <Form.Control type="text" value={socialhandle} onChange={ShandleChange} placeholder="Socialhandle" />
+                            <Form.Label>Event</Form.Label>
+                            <Form.Control type="text" value={socialhandle} onChange={ShandleChange} placeholder="Event" />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
