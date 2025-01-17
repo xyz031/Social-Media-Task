@@ -9,10 +9,10 @@ const Headers = () => {
             <Navbar className="bg-dark" style={{height:"60px"}}>
                 <Container>
 
-                        <NavLink to="/" className="text-light text-decoration-none">Record a Memory</NavLink>
+                        <NavLink to="/" className="text-light text-decoration-none">User form</NavLink>
                     <Navbar.Collapse className="justify-content-end">
 
-                    <NavLink to="/getuser" className="text-light text-decoration-none">Memories</NavLink>
+                    <NavLink to="/getuser" className="text-light text-decoration-none">Admin</NavLink>
 
                     </Navbar.Collapse>
                 </Container>

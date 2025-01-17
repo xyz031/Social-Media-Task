@@ -24,7 +24,7 @@ const Home = () => {
     return (
         <>
             <Container>
-                <h1 className='text-center' >Memories</h1>
+                <h1 className='text-center' >Users</h1>
                 <div className='d-flex justify-content-between flex-wrap'>
                     {
                         userdata.length > 0 && userdata.map((element) => {
@@ -35,7 +35,7 @@ const Home = () => {
                                             <Card.Title style={{ fontWeight: "bold" }}>{element.username}</Card.Title>
                                             <Card.Title style={{ fontWeight: "bold" }}>{element.socialhandle}</Card.Title>
                                         </Card.Body>
-                                        <div className='d-flex justify-content-start p-3'>
+                                        <div className='d-flex justify-content-start p-3'   >
                                             {
                                                 element.userprofile.length > 0 && element.userprofile.map((ele) => {
                                                     return (
